@@ -1,0 +1,14 @@
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\bin\Debug\net10.0\Challenge #2 - Guess It ShowersZ.exe
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\bin\Debug\net10.0\Challenge #2 - Guess It ShowersZ.deps.json
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\bin\Debug\net10.0\Challenge #2 - Guess It ShowersZ.runtimeconfig.json
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\bin\Debug\net10.0\Challenge #2 - Guess It ShowersZ.dll
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\bin\Debug\net10.0\Challenge #2 - Guess It ShowersZ.pdb
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\Challenge #2 - Guess It ShowersZ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\Challenge #2 - Guess It ShowersZ.AssemblyInfoInputs.cache
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\Challenge #2 - Guess It ShowersZ.AssemblyInfo.cs
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\Challenge #2 - Guess It ShowersZ.csproj.CoreCompileInputs.cache
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\Challenge #2 - Guess It ShowersZ.dll
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\refint\Challenge #2 - Guess It ShowersZ.dll
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\Challenge #2 - Guess It ShowersZ.pdb
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\Challenge #2 - Guess It ShowersZ.genruntimeconfig.cache
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\ref\Challenge #2 - Guess It ShowersZ.dll
