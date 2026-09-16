@@ -7,8 +7,16 @@ the user to input a number. If the number inputted is too high or too low to the
 inputted is the same as the program's chosen number, the game ends. If they found the number on their first try, the program will write a special message to them to 
 congradulate them. If they found the number after more than 1 try, the program will them how many tries it took them to find it. Afterwards, the program will ask them
 if they want to play again. If they say yes, the game will restart. But if they say no, the game will say goodbye and finish running.*/
-//Peer Review:
-//Review:
+//Peer Review: Callen Thomason
+/*
+Program runs as intended and the games play very well. 
+On the custom you can set a min that is higher than the max and it causes a runtime error
+You are also allowed to guess numbers that are above and below the constraints. Might be nice for users if you didn't allow that
+If statements to set min and maxs are very well made. Switch statement would have also worked nicely here
+Flow chart looks really good, and your code follows it nicely
+All your validation is great! 
+Your welcome and thanks for playing are a nice touch.
+*/ 
 
 Console.Clear();
 
