@@ -12,3 +12,4 @@ C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess
 C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\Challenge #2 - Guess It ShowersZ.pdb
 C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\Challenge #2 - Guess It ShowersZ.genruntimeconfig.cache
 C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\ref\Challenge #2 - Guess It ShowersZ.dll
+C:\Users\zionn\Desktop\CodeStack Academy Combine\A Homework\Challenge #2 - Guess It ShowersZ\obj\Debug\net10.0\Challenge #2 - Guess It ShowersZ.sourcelink.json

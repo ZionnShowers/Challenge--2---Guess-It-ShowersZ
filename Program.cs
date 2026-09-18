@@ -16,126 +16,28 @@ If statements to set min and maxs are very well made. Switch statement would hav
 Flow chart looks really good, and your code follows it nicely
 All your validation is great! 
 Your welcome and thanks for playing are a nice touch.
-*/ 
+*/
+
+using System.Security.Cryptography;
 
 Console.Clear();
 
-Random rnd = new Random();
-
-int max = 0;
-int min = 0;
+NumberGuessing NumGuess = new NumberGuessing();
 
 Console.WriteLine("Welcome to Guess It!");
 
 string playAgain;
 do
 {
+Console.WriteLine ("");
 
-//Set Difficulty
-Console.WriteLine("Please choose a difficulty level:");
-Console.WriteLine("1 - Easy (1-10)");
-Console.WriteLine("2 - Medium (1-50)");
-Console.WriteLine("3 - Hard (1-100)");
-Console.WriteLine("4 - Custom");
-string diffSet = Console.ReadLine();
-bool success = int.TryParse(diffSet, out int realDiffSet);
+NumGuess.SetDifficulty();
+NumGuess.RandomNumSetup();
+Console.WriteLine ("");
+NumGuess.StartGame();
+NumGuess.MakeGuess();
 
-while (success == false || realDiffSet >= 5 || realDiffSet <= 0)
-{
-    Console.WriteLine("Error: Please input a valid number.");
-    diffSet = Console.ReadLine();
-    success = int.TryParse(diffSet, out realDiffSet);
-}
-if(realDiffSet == 1)
-{
-    Console.WriteLine("You have chosen EASY! (1-10)");
-    max = 11;
-    min = 1;
-}
-else if(realDiffSet == 2)
-{
-    Console.WriteLine("You have chosen MEDIUM! (1-50)");
-    max = 51;
-    min = 1;
-}
-else if(realDiffSet == 3)
-{
-    Console.WriteLine("You have chosen HARD! (1-100)");
-    max = 101;
-    min = 1;
-}
-else if(realDiffSet == 4)
-{
-    Console.WriteLine("You have chosen CUSTOM!");
-    bool isConverted1 = false;
-    bool isConverted2 = false;
-
-    while (isConverted1 == false || isConverted2 == false)
-    {
-        Console.Write("Please set the MAXimum amount of numbers: ");
-        string CUSmax = Console.ReadLine();
-        Console.Write("Please set the MINimum amount of numbers: ");
-        string CUSmin = Console.ReadLine();
-        isConverted1 = int.TryParse(CUSmax, out max);
-        isConverted2 = int.TryParse(CUSmin, out min);
-        if (isConverted1 == false || isConverted2 == false)
-            {
-                Console.WriteLine("Error: One of your numbers isn't a valid number. Try Again!");
-            }
-    }
-    // int max = 101;
-    // int min = 1;
-}
-
-//Game setup
-int randomNum = rnd.Next(min, max);
-
-// Console.WriteLine(max);
-// Console.WriteLine(min);
-// Console.WriteLine(randomNum);
-
-int tries = 1;
-bool finished = false;
-
-//Game START
-Console.Write("Guess your number here: ");
-
-do
-{
-
-string number = Console.ReadLine();
-success = int.TryParse(number, out int playerGuess);
-
-while(success == false)
-{
-    Console.Write("Error: Please input a valid number: ");
-    number = Console.ReadLine();
-    success = int.TryParse(number, out playerGuess);
-}
-if(randomNum == playerGuess && tries == 1) //Found it first try
-{
-    Console.WriteLine("WOW, you got it first try! NICE!");
-    finished = true;
-}
-else if(randomNum == playerGuess && tries > 1) //Found it after multiple tries
-{
-    Console.WriteLine($"You got it! It took you {tries} tries!");
-    finished = true;
-}
-else if(randomNum < playerGuess) //Number is too high
-{
-    Console.Write("Your number is too high! Try again: ");
-    tries += 1;
-}
-else if(randomNum > playerGuess)
-{
-    Console.Write("Your number is too low! Try again: "); //Number too low
-    tries += 1;
-}
-
-}while(finished == false);
-
-//play again?
+//play again
 Console.WriteLine ("Would you like to play again? y/n");
 playAgain = Console.ReadLine().ToLower();
 
@@ -146,5 +48,148 @@ while(playAgain != "y" && playAgain != "n")
 }
 
 }while(playAgain == "y");
+// }while(playAgain == "y");
+// NumGuess.CheckGuess();
 
-Console.WriteLine("Thanks for playing!");
+// while (NumGuess.playerGuess != NumGuess.randomNum)
+// {
+    // bool didConvert = NumGuess.MakeGuess();
+
+    // if(didConvert == true)
+    // {
+    //     NumGuess.CheckGuess();
+    // }
+    // else
+    // {
+    //     Console.WriteLine("You didn't enter a number! Try again!");
+    // }
+// }
+
+
+
+// Random rnd = new Random();
+
+// int max = 0;
+// int min = 0;
+
+// Console.WriteLine("Welcome to Guess It!");
+
+// string playAgain;
+// do
+// {
+
+// Console.WriteLine("Please choose a difficulty level:");
+// Console.WriteLine("1 - Easy (1-10)");
+// Console.WriteLine("2 - Medium (1-50)");
+// Console.WriteLine("3 - Hard (1-100)");
+// Console.WriteLine("4 - Custom");
+// string diffSet = Console.ReadLine();
+// bool success = int.TryParse(diffSet, out int realDiffSet);
+
+// while (success == false || realDiffSet >= 5 || realDiffSet <= 0)
+// {
+//     Console.WriteLine("Error: Please input numbers 1-4");
+//     diffSet = Console.ReadLine();
+//     success = int.TryParse(diffSet, out realDiffSet);
+// }
+// if(realDiffSet == 1)
+// {
+//     Console.WriteLine("You have chosen EASY! (1-10)");
+//     max = 11;
+//     min = 1;
+// }
+// else if(realDiffSet == 2)
+// {
+//     Console.WriteLine("You have chosen MEDIUM! (1-50)");
+//     max = 51;
+//     min = 1;
+// }
+// else if(realDiffSet == 3)
+// {
+//     Console.WriteLine("You have chosen HARD! (1-100)");
+//     max = 101;
+//     min = 1;
+// }
+// else if(realDiffSet == 4)
+// {
+//     Console.WriteLine("You have chosen CUSTOM!");
+//     bool isConverted1 = false;
+//     bool isConverted2 = false;
+
+//     while (isConverted1 == false || isConverted2 == false)
+//     {
+//         Console.Write("Please set the MAXimum amount of numbers: ");
+//         string CUSmax = Console.ReadLine();
+//         Console.Write("Please set the MINimum amount of numbers: ");
+//         string CUSmin = Console.ReadLine();
+//         isConverted1 = int.TryParse(CUSmax, out max);
+//         isConverted2 = int.TryParse(CUSmin, out min);
+//         if (isConverted1 == false || isConverted2 == false)
+//             {
+//                 Console.WriteLine("Error: One of your numbers isn't a valid number. Try Again!");
+//             }
+//         else if (min > max)
+//             {
+//                 Console.WriteLine("Error: Your minimum number is higher than your maximum number. Try Again!");
+//                 isConverted1 = false;
+//                 isConverted2 = false;
+//             }
+//     }
+// }
+
+// int randomNum = rnd.Next(min, max);
+
+
+// int tries = 1;
+// bool finished = false;
+
+// Console.Write("Guess your number here: ");
+
+// do
+// {
+
+// string number = Console.ReadLine();
+// success = int.TryParse(number, out int playerGuess);
+
+// while(success == false)
+// {
+//     Console.Write("Error: Please input a valid number: ");
+//     number = Console.ReadLine();
+//     success = int.TryParse(number, out playerGuess);
+// }
+// if(randomNum == playerGuess && tries == 1)
+// {
+//     Console.WriteLine("WOW, you got it first try! NICE!");
+//     finished = true;
+// }
+// else if(randomNum == playerGuess && tries > 1)
+// {
+//     Console.WriteLine($"You got it! It took you {tries} tries!");
+//     finished = true;
+// }
+// else if(randomNum < playerGuess) 
+// {
+//     Console.Write("Your number is too high! Try again: ");
+//     tries += 1;
+// }
+// else if(randomNum > playerGuess)
+// {
+//     Console.Write("Your number is too low! Try again: ");
+//     tries += 1;
+// }
+
+// }while(finished == false);
+
+
+// Console.WriteLine ("Would you like to play again? y/n");
+// playAgain = Console.ReadLine().ToLower();
+
+// while(playAgain != "y" && playAgain != "n")
+// {
+//     Console.WriteLine("Error! Try Again!");
+//     playAgain = Console.ReadLine().ToLower();
+// }
+
+// }while(playAgain == "y");
+
+// Console.WriteLine("Thanks for playing!");
