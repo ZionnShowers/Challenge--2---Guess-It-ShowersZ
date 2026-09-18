@@ -8,12 +8,6 @@ public class NumberGuessing
     //public string number;
     public int randomNum;
     public int playerGuess;
-    // public string playAgain;
-
-    // public void Intro()
-    // {
-    //     Console.WriteLine("Welcome to Guess It!");
-    // }
     public void SetDifficulty()
     {
         //Set Difficulty
@@ -126,18 +120,4 @@ public class NumberGuessing
             MakeGuess();
         }
     }
-    // public string PlayAgain()
-    // {
-    //     Console.WriteLine("Would you like to play again? y/n");
-    //     playAgain = Console.ReadLine().ToLower();
-
-    //     while (playAgain != "y" && playAgain != "n")
-    //     {
-    //         Console.WriteLine("Error! Try Again!");
-    //         PlayAgain();
-    //     }
-
-    //     return playAgain;
-
-    // }//while(playAgain == "y");
 }
