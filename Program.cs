@@ -18,8 +18,6 @@ All your validation is great!
 Your welcome and thanks for playing are a nice touch.
 */
 
-using System.Security.Cryptography;
-
 Console.Clear();
 
 NumberGuessing NumGuess = new NumberGuessing();
